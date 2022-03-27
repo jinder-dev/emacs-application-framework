@@ -19,9 +19,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from PyQt5.QtCore import Qt, QEvent, QThread, pyqtSignal
-from PyQt5.QtGui import QKeyEvent, QCursor, QFocusEvent, QColor
-from PyQt5.QtWidgets import QGraphicsScene, QApplication, qApp
+from PyQt6.QtCore import Qt, QEvent, QThread, pyqtSignal
+from PyQt6.QtGui import QKeyEvent, QCursor, QFocusEvent, QColor
+from PyQt6.QtWidgets import QGraphicsScene, QApplication, qApp
 from core.utils import (interactive, abstract, get_clipboard_text, 
                         set_clipboard_text, eval_in_emacs, message_to_emacs, 
                         input_message, get_emacs_var, get_emacs_func_result, 

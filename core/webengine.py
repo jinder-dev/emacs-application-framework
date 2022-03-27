@@ -19,11 +19,11 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from PyQt5 import QtCore
-from PyQt5.QtCore import QUrl, Qt, QEvent, QEventLoop, QTimer, QFile, QPointF, QPoint
-from PyQt5.QtWebChannel import QWebChannel
-from PyQt5.QtWebEngineWidgets import QWebEngineView, QWebEnginePage, QWebEngineScript, QWebEngineProfile, QWebEngineSettings
-from PyQt5.QtWidgets import QApplication, QWidget
+from PyQt6 import QtCore
+from PyQt6.QtCore import QUrl, Qt, QEvent, QEventLoop, QTimer, QFile, QPointF, QPoint
+from PyQt6.QtWebChannel import QWebChannel
+from PyQt6.QtWebEngineWidgets import QWebEngineView, QWebEnginePage, QWebEngineScript, QWebEngineProfile, QWebEngineSettings
+from PyQt6.QtWidgets import QApplication, QWidget
 from core.buffer import Buffer
 from core.utils import (touch, string_to_base64, popen_and_call, 
                         call_and_check_code, interactive, 
@@ -402,7 +402,7 @@ class BrowserView(QWebEngineView):
         return self.web_page.execute_javascript(js)
 
     def scroll_wheel(self, x_offset, y_offset):
-        from PyQt5.QtGui import QWheelEvent
+        from PyQt6.QtGui import QWheelEvent
         
         self.simulated_wheel_event = True
 
@@ -737,7 +737,7 @@ class BrowserCookieStorage:
         ''' Load cookies.'''
         with open(self.cookie_file, 'rb+') as store:
             cookies = store.read()
-            from PyQt5.QtNetwork import QNetworkCookie
+            from PyQt6.QtNetwork import QNetworkCookie
             
             return QNetworkCookie.parseCookies(cookies)
 

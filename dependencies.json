@@ -3,9 +3,9 @@
     "wmctrl",
     "python",
     "python-pip",
-    "python-pyqt5",
-    "python-pyqt5-sip",
-    "python-pyqt5-webengine",
+    "python-pyqt6",
+    "python-pyqt6-sip",
+    "python-pyqt6-webengine",
     "nodejs",
     "npm"
   ],
@@ -19,9 +19,9 @@
     "nodejs",
     "npm",
     "libglib2.0-dev",
-    "python3-pyqt5",
+    "python3-pyqt6",
     "python3-sip",
-    "python3-pyqt5.qtwebengine"
+    "python3-pyqt6.qtwebengine"
   ],
   "dnf": [
     "wmctrl",
@@ -29,7 +29,7 @@
     "npm",
     "glib2-devel",
     "python3-qt5",
-    "python3-pyqt5-sip",
+    "python3-pyqt6-sip",
     "python3-qt5-webengine",
     "pyqtwebengine-devel"
   ],
@@ -60,15 +60,15 @@
       "lxml"
     ],
     "win32": [
-      "pyqt5",
-      "pyqt5-sip",
+      "pyqt6",
+      "pyqt6-sip",
       "pyqtwebengine",
       "pygetwindow"
     ],
     "darwin": [
       "epc",
-      "pyqt5",
-      "pyqt5-sip",
+      "pyqt6",
+      "pyqt6-sip",
       "pyqtwebengine",
       "mac-app-frontmost"
     ]

@@ -19,9 +19,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from PyQt5.QtCore import Qt, QEvent, QPoint
-from PyQt5.QtGui import QPainter, QWindow, QBrush
-from PyQt5.QtWidgets import QWidget, QVBoxLayout, QGraphicsView, QFrame
+from PyQt6.QtCore import Qt, QEvent, QPoint
+from PyQt6.QtGui import QPainter, QWindow, QBrush
+from PyQt6.QtWidgets import QWidget, QVBoxLayout, QGraphicsView, QFrame
 from core.utils import eval_in_emacs, focus_emacs_buffer, get_emacs_func_result
 
 class View(QWidget):
